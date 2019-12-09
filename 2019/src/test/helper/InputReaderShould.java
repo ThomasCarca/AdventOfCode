@@ -1,7 +1,9 @@
+package helper;
+
+import helper.InputReader;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.nio.file.NoSuchFileException;
 import java.util.List;
@@ -15,7 +17,7 @@ public class InputReaderShould {
     @Test
     @DisplayName("read the input file entirely")
     public void testReadTheInputFileEntirely() throws IOException {
-        String filePath = "src/test/input";
+        String filePath = "src/test/helper/input";
         List<Integer> readInput = InputReader.readFromPath(filePath);
         assertEquals(4, readInput.size());
         assertEquals(1, readInput.get(0));

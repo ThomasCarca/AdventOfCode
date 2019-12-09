@@ -1,3 +1,7 @@
+package part1;
+
+import helper.InputReader;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -8,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FuelCounterUpperShould {
 
-    private String inputPath = "src/test/acceptance-input";
+    private String inputPath = "src/test/part1/acceptance-input";
 
     @Test
     @DisplayName("find the sum of the fuel values from an input file")
@@ -21,7 +25,7 @@ public class FuelCounterUpperShould {
 
         //Then
         assertEquals(4, masses.size());
-        assertEquals(34241, fuelCounterUpper.processTotalFuel());
+        Assertions.assertEquals(34241, fuelCounterUpper.processTotalFuel());
     }
 
 }

@@ -1,3 +1,6 @@
+import helper.InputReader;
+import part1.FuelCounterUpper;
+
 import java.io.IOException;
 import java.util.List;
 
