@@ -1,5 +1,6 @@
 package part1;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class IntCodeReader {
@@ -10,10 +11,10 @@ public class IntCodeReader {
 
     private List<Integer> intCodeProgram;
 
-    public IntCodeReader(List<Integer> intCodeProgram) {
-        this.intCodeProgram = intCodeProgram;
-        intCodeProgram.set(1, 12);
-        intCodeProgram.set(2, 2);
+    public IntCodeReader(List<Integer> intCodeProgram, int noun, int verb) {
+        this.intCodeProgram = new ArrayList<>(intCodeProgram);
+        this.intCodeProgram.set(1, noun);
+        this.intCodeProgram.set(2, verb);
     }
 
     public int valueAtFirstPositionAfterProgramHalts() {

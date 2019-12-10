@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("IntCodeReader should")
 public class IntCodeReaderShould {
 
     private String inputPath1 = "src/test/java/part1/acceptance-input-1";
@@ -19,7 +20,7 @@ public class IntCodeReaderShould {
 
     @Test
     @DisplayName("find the value at position 0 of the program")
-    public void findSumOfFuelValuesFromFile() throws IOException {
+    public void findValueAtPosition0OfProgram() throws IOException {
         // Given
         List<Integer> intCodeProgram1 = InputReader.readFromPathWithCommas(inputPath1);
         List<Integer> intCodeProgram2 = InputReader.readFromPathWithCommas(inputPath2);
@@ -28,11 +29,13 @@ public class IntCodeReaderShould {
         List<Integer> intCodeProgram5 = InputReader.readFromPathWithCommas(inputPath5);
 
         // When
-        IntCodeReader intCodeReader1 = new IntCodeReader(intCodeProgram1);
-        IntCodeReader intCodeReader2 = new IntCodeReader(intCodeProgram2);
-        IntCodeReader intCodeReader3 = new IntCodeReader(intCodeProgram3);
-        IntCodeReader intCodeReader4 = new IntCodeReader(intCodeProgram4);
-        IntCodeReader intCodeReader5 = new IntCodeReader(intCodeProgram5);
+        int noun = 12;
+        int verb = 2;
+        IntCodeReader intCodeReader1 = new IntCodeReader(intCodeProgram1, noun, verb);
+        IntCodeReader intCodeReader2 = new IntCodeReader(intCodeProgram2, noun, verb);
+        IntCodeReader intCodeReader3 = new IntCodeReader(intCodeProgram3, noun, verb);
+        IntCodeReader intCodeReader4 = new IntCodeReader(intCodeProgram4, noun, verb);
+        IntCodeReader intCodeReader5 = new IntCodeReader(intCodeProgram5, noun, verb);
 
         //Then
         assertEquals(19, intCodeProgram1.size());
