@@ -10,6 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+@DisplayName("FuelCounterUpper should")
 public class FuelCounterUpperShould {
 
     private String inputPath = "src/test/java/part1/acceptance-input";
