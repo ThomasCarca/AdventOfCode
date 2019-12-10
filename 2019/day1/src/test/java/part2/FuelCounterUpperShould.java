@@ -18,7 +18,7 @@ public class FuelCounterUpperShould {
     @DisplayName("find the sum of the fuel values from an input file")
     public void findSumOfFuelValuesFromFile() throws IOException {
         // Given
-        List<Integer> masses = InputReader.readFromPath(inputPath);
+        List<Integer> masses = InputReader.readFromPathWithLineBreaks(inputPath);
 
         // When
         FuelCounterUpper fuelCounterUpper = new FuelCounterUpper(masses);
