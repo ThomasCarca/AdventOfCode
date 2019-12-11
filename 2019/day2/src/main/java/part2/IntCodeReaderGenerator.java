@@ -2,7 +2,6 @@ package part2;
 
 import part1.IntCodeReader;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class IntCodeReaderGenerator {

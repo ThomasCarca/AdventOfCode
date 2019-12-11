@@ -1,18 +1,15 @@
 package part1.acceptance;
 
 import org.junit.jupiter.api.DisplayName;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import part1.Circuit;
 import part1.CircuitMeasurement;
-import part1.Point;
 import part1.Wire;
 import reader.InputReader;
 
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Stream;
 

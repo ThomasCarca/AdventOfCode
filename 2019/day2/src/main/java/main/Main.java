@@ -5,7 +5,6 @@ import part2.IntCodeReaderGenerator;
 import reader.InputReader;
 
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
